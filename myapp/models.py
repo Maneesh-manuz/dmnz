@@ -20,5 +20,5 @@ class payment(models.Model):
     modelname = models.ForeignKey(items,on_delete=models.DO_NOTHING , related_name='pay_model',null=True,blank=True)
     price = models.ForeignKey(items , on_delete=models.DO_NOTHING , related_name='pay_price',null=True,blank=True)
     clientname = models.CharField(max_length=225 ,null=True)
-    Purchase_date=models.DateField(auto_now_add=False, auto_now=False,  null=True, blank=True) 
+    date=models.DateField(auto_now_add=False, auto_now=False,  null=True, blank=True) 
    
